@@ -18,10 +18,11 @@ func _ready():
 	divided_button.connect('pressed',self,'divided_button_operation')
 	reset_button.connect('pressed',self,'reset_calculator')
 	
-	
+# Editing	
 func get_numbers() -> void:
 	first_number = float(get_node('First_Number').get_text())
 	second_number = float(get_node('Second_Number').get_text())
+#
 	
 func plus_button_operation() -> void:
 	get_numbers()
